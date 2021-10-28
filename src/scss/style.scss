@@ -1,0 +1,21 @@
+// Importing Bootstrap
+@use '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+// MAIN STYLESHEET
+@import './components/variables';
+@import './components/mixins';
+@import './components/reset';
+@import './components/button';
+@import './home-page/hero';
+@import './home-page/intro';
+@import './home-page/skill';
+@import './home-page/qualification';
+@import './home-page/services';
+@import './home-page/portfolio';
+@import './home-page/testimonial';
+@import './home-page/blog';
+@import './home-page/contact';
+@import './blog-page/blog-hero';
+@import './blog-page/blog-showcase';
+@import './cv/cv';
+@import './components/foooter';
