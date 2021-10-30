@@ -1,27 +1,32 @@
-.services{
-    background: hsl(263, 100%, 5%);
-    perspective: 1mm;
-    .card{
-        border-radius: 0;
-        border-top-right-radius: 1.8rem;
+.services {
+  background: hsl(263, 100%, 5%);
+  perspective: 1mm;
 
-        &:hover{
-            @include hoverEffects;
-
-            i{
-                background: $secondary !important;
-                color: $primary;
-            }
-        }
-        
-
-        .card-header{
-            margin-top: -2.5rem;
-            border: none;
-        }
-
-        i{
-            border-radius: 0.5rem;
-        }
+  .portfolio-grid {
+    @media (min-width: 1100px) {
+      grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)) !important;
     }
+  }
+  .card {
+    border-radius: 0;
+    border-top-right-radius: 1.8rem;
+
+    &:hover {
+      @include hoverEffects;
+
+      i {
+        background: $secondary !important;
+        color: $primary;
+      }
+    }
+
+    .card-header {
+      margin-top: -2.5rem;
+      border: none;
+    }
+
+    i {
+      border-radius: 0.5rem;
+    }
+  }
 }
